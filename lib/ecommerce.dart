@@ -63,6 +63,7 @@ class _ShopPageState extends State<ShopPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: true,
         title: Text("E-Commerce"),
         actions: [
           IconButton(
@@ -173,6 +174,14 @@ class _FavoritePageState extends State<FavoritePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("My Favorite"),
+        leading: BackButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ShopPage()),
+            );
+          },
+        ),
       ),
       body: ListView.builder(
         itemCount: productData.length,

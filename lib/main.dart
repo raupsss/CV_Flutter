@@ -4,11 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:my_cv/cv.dart';
 import 'package:my_cv/ecommerce.dart';
+import 'package:my_cv/example.dart';
 import 'package:my_cv/home.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 void main() {
-  runApp(const ECommerceApp());
+  runApp(const RouteExample());
 }
 
 class MyApp extends StatelessWidget {
